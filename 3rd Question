@@ -1,0 +1,13 @@
+> data <-c(200, 300, 400, 600, 1000)
+> new_min<- 0
+> nem_max<-1
+> min_max<- (data-min(data))/(max(data)-min(data))
+> print(min_max)
+[1] 0.000 0.125 0.250 0.500 1.000
+> mean(data)
+[1] 500
+> sd(data)
+[1] 316.2278
+> z_score<- (data-mean(data))/sd(data)
+> print(z_score)
+[1] -0.9486833 -0.6324555 -0.3162278  0.3162278  1.5811388
