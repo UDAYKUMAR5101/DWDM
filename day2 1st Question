@@ -1,0 +1,31 @@
+> age_of_child<-c("5-6 years","7-8 years","9-10 years")
+> A<-c(18,2,20)
+> B<-c(22,28,10)
+> C<-c(20,40,40)
+> df<-data.frame(age_of_child,A,B,C)
+> df
+  age_of_child  A  B  C
+1    5-6 years 18 22 20
+2    7-8 years  2 28 40
+3   9-10 years 20 10 40
+> #1a
+> covar<-cor(B,C)
+> covar
+[1] -0.1889822
+> covar<-cor(A,B)
+> covar
+[1] -0.8183918
+> #1b
+> cov(df[c(2,3,4)])
+          A   B         C
+A  97.33333 -74 -46.66667
+B -74.00000  84 -20.00000
+C -46.66667 -20 133.33333
+> #1c
+> cor(B,C)
+[1] -0.1889822
+> #1d
+> cor(df[c(3,4)])
+           B          C
+B  1.0000000 -0.1889822
+C -0.1889822  1.0000000
