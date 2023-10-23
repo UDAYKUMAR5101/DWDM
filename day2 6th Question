@@ -1,0 +1,2 @@
+plot(mtcars$mpg,type = "l",col="blue")
+plot(mtcars$qsec,type="l",col="red")
