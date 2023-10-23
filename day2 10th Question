@@ -1,0 +1,6 @@
+path <- "/Users/kadiv/OneDrive/Desktop/Tools DWDM/diabetes.csv"
+content <- read.csv(path)
+# contents of the csv file
+print(content)
+plot(content$BloodPressure,content$Age,col='red',xlab='BloodPressue',ylab='Age')
+barplot(content$Age,sort(content$BloodPressure),col='darkorange')
