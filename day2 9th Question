@@ -1,0 +1,2 @@
+points_scored <- c(10, 15, 20, 25, 30, 35, 40, 45, 50, 200)
+boxplot(points_scored, main="Box Plot of Points Scored", ylab="Points")
